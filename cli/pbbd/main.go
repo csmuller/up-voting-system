@@ -28,7 +28,7 @@ var (
 	NodeHomeDirectory = os.ExpandEnv("$HOME/.pbbd")
 	// DefaultClientHomeDirectory is the default directory for pbbd commands that require access
 	// to client data, e.g. accounts needed for signing genesis transactions.
-	DefaultClientHomeDirectory = os.ExpandEnv("$HOME/.eacli")
+	DefaultClientHomeDirectory = os.ExpandEnv("$HOME/.acli")
 )
 
 func main() {
@@ -73,7 +73,7 @@ func main() {
 }
 
 func newApp(logger tlog.Logger, db dbm.DB, traceStore io.Writer) abci.Application {
-	return pbb.NewBulletinBoardApp(logger, db)//baseapp.SetPruning(store.NewPruningOptionsFromString(viper.GetString("pruning"))),
+	return pbb.NewBulletinBoardApp(logger, db) //baseapp.SetPruning(store.NewPruningOptionsFromString(viper.GetString("pruning"))),
 	//baseapp.SetMinGasPrices(viper.GetString(server.FlagMinGasPrices)),
 	//baseapp.SetHaltHeight(viper.GetUint64(server.FlagHaltHeight)),
 	//baseapp.SetHaltTime(viper.GetUint64(server.FlagHaltTime)),

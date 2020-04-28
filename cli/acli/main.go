@@ -22,11 +22,11 @@ import (
 
 var (
 	// ElectionAdminCliHomeDir home directory for the election administration cli application
-	ElectionAdminCliHomeDir = os.ExpandEnv("$HOME/.eacli")
+	ElectionAdminCliHomeDir = os.ExpandEnv("$HOME/.acli")
 )
 
 func main() {
-	crypto.SetupLogger("eacli-log.txt")
+	crypto.SetupLogger("acli-log.txt")
 	cobra.EnableCommandSorting = false
 
 	// Create a codec instance containing codecs from all the modules used in the bulletin board.
@@ -40,7 +40,7 @@ func main() {
 	config.Seal()
 
 	rootCmd := &cobra.Command{
-		Use:   "eacli",
+		Use:   "acli",
 		Short: "Election Administration Client",
 	}
 

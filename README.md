@@ -19,13 +19,13 @@ part of this implementation. They were originally implemented in the
 
 Requires **Go 1.13.0+**.
 
-Make sure that your GOPATH is set and $GOPATH/bin is in your path. Your
-environment needs to be set up for go modules functionality.
+Make sure that your GOPATH is set and GOPATH/bin is in your PATH. 
+This project makes use of go modules. 
 
 Clone the repository:
 ```zsh
-mkdir -p ~/go/src/github.com/csmuller
-cd ~/go/src/github.com/csmuller
+mkdir -p $GOPATH/src/github.com/csmuller
+cd $GOPATH/src/github.com/csmuller
 git clone https://github.com/csmuller/up-voting-system.git
 cd up-voting-system
 ```
@@ -44,6 +44,6 @@ Now you should be able to run the following commands:
 ```
 pbbd help
 vcli help
-eacli help
+acli help
 ```
 

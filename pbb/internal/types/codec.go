@@ -2,7 +2,7 @@ package types
 
 import (
 	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/csmuller/uep-voting/crypto"
+	"github.com/csmuller/up-voting-system/crypto"
 )
 
 // ModuleCdc is the codec for the module

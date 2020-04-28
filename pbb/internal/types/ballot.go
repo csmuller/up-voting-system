@@ -2,7 +2,7 @@ package types
 
 import (
 	"fmt"
-	"github.com/csmuller/uep-voting/crypto"
+	"github.com/csmuller/up-voting-system/crypto"
 	"math/big"
 	"strings"
 )

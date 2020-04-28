@@ -1,4 +1,4 @@
-module github.com/csmuller/uep-voting
+module github.com/csmuller/up-voting-system
 
 go 1.13
 

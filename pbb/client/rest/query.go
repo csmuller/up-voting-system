@@ -2,7 +2,7 @@ package rest
 
 import (
 	"fmt"
-	"github.com/csmuller/uep-voting/pbb/internal/keeper"
+	"github.com/csmuller/up-voting-system/pbb/internal/keeper"
 	"net/http"
 
 	"github.com/cosmos/cosmos-sdk/client/context"

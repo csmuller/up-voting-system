@@ -2,7 +2,7 @@ package types
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/csmuller/uep-voting/crypto"
+	"github.com/csmuller/up-voting-system/crypto"
 	"math/big"
 )
 

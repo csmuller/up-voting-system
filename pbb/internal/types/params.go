@@ -3,7 +3,7 @@ package types
 import (
 	"fmt"
 	"github.com/cosmos/cosmos-sdk/x/params/subspace"
-	"github.com/csmuller/uep-voting/crypto"
+	"github.com/csmuller/up-voting-system/crypto"
 	"math/big"
 	"strings"
 )

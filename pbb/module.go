@@ -2,14 +2,14 @@ package pbb
 
 import (
 	"encoding/json"
-	"github.com/csmuller/uep-voting/pbb/internal/types"
+	"github.com/csmuller/up-voting-system/pbb/internal/types"
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/csmuller/uep-voting/pbb/client/cli"
-	"github.com/csmuller/uep-voting/pbb/client/rest"
+	"github.com/csmuller/up-voting-system/pbb/client/cli"
+	"github.com/csmuller/up-voting-system/pbb/client/rest"
 
 	"github.com/cosmos/cosmos-sdk/client/context"
 	sdk "github.com/cosmos/cosmos-sdk/types"

@@ -6,8 +6,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/params/subspace"
-	"github.com/csmuller/uep-voting/crypto"
-	"github.com/csmuller/uep-voting/pbb/internal/types"
+	"github.com/csmuller/up-voting-system/crypto"
+	"github.com/csmuller/up-voting-system/pbb/internal/types"
 	"math/big"
 )
 

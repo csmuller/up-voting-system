@@ -1,8 +1,8 @@
 package pbb
 
 import (
-	"github.com/csmuller/uep-voting/pbb/internal/keeper"
-	"github.com/csmuller/uep-voting/pbb/internal/types"
+	"github.com/csmuller/up-voting-system/pbb/internal/keeper"
+	"github.com/csmuller/up-voting-system/pbb/internal/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

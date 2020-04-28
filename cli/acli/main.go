@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/csmuller/uep-voting/crypto"
-	"github.com/csmuller/uep-voting/pbb"
+	"github.com/csmuller/up-voting-system/crypto"
+	"github.com/csmuller/up-voting-system/pbb"
 	"os"
 	"path"
 

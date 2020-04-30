@@ -1,0 +1,10 @@
+FROM golang:alpine
+
+ENV PACKAGES make git libc-dev bash gcc vim linux-headers eudev-dev python htop
+
+WORKDIR /go/src/github.com/csmuller/up-voting-system
+COPY . .
+
+RUN apk add --no-cache $PACKAGES
+RUN go get -d -v ./...
+RUN go install -v ./...

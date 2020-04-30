@@ -1,0 +1,25 @@
+FROM pbb:latest
+
+ARG NR
+
+WORKDIR /go/src/github.com/csmuller/uep-voting
+COPY . .
+
+RUN pbbd init val$NR --chain-id pbb
+RUN sed -i -e '79,81 s/^laddr.*/laddr = \"tcp:\/\/0.0.0.0:26657"/' ~/.pbbd/config/config.toml
+RUN sed -i -e 's/^max_body_bytes.*/max_body_bytes = 10000000/' ~/.pbbd/config/config.toml
+RUN sed -i -e 's/^max_packet_msg_payload_size.*/max_packet_msg_payload_size = 10000000/' ~/.pbbd/config/config.toml 
+RUN sed -i -e 's/^max_tx_bytes.*/max_tx_bytes = 10000000/' ~/.pbbd/config/config.toml
+
+RUN echo "12345678" | eacli keys add admin
+
+RUN eacli config chain-id pbb
+RUN eacli config output json
+RUN eacli config indent true
+RUN eacli config trust-node true
+
+RUN pbbd add-genesis-account $(eacli keys show admin -a) 100000000stake,1000foo
+RUN echo "12345678" | pbbd gentx --details val$NR --ip 192.167.10.1$NR --name admin 
+
+EXPOSE 26657/tcp
+EXPOSE 26656/tcp
